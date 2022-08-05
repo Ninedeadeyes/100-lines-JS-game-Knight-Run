@@ -1,0 +1,88 @@
+
+h2{
+    margin-left:50px;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    margin-left:260px;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:200px;
+    text-decoration-line:underline; 
+}
+
+body{
+    background-color: black;
+}
+
+.knight{
+    position: absolute;
+    width:60px;
+    height:60px;
+    bottom: 0px;
+    background-image: url("images/hero1.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.enemy{
+    position: absolute;
+    width:60px;
+    height:60px;
+    bottom:0px;
+}
+
+.grid{
+    position: relative;
+    width:800px;
+    height:500px;
+    background-color: black;
+}
+
+.candle{
+    position: absolute;
+    width:600px;
+    height:70px;
+    background-image: url("images/candle.gif");
+    bottom: 70px;
+    left:1000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation:movement 2.5s infinite  ; 
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+}
+
+.candleAlt{
+    animation-delay: 1s;
+    background-image: none;
+}
+
+@keyframes movement {
+
+    10%{
+        transform:translateX(-120px);
+        background-image: url("images/candle.gif");
+    }
+
+    90%{
+        transform:translateX(-1080px);
+    }
+
+    100%{
+        transform:translateX(-2000px);
+        background-image: url("images/candle.gif");
+    }
+}
+
+.floor{
+    position: absolute;
+    width:1000px;
+    height:20px;
+    background-image:url("images/wall.gif");
+    background-size: contain;
+    top: 499px;
+}
+
