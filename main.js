@@ -76,17 +76,10 @@ function generateEnemy(){
             score++;
             alert.innerHTML="Score:"+score;
 
-            if (score>15 && score<30){
-                rank.innerHTML=("Ranking: The Cannon Fodder  (A promotion !! Ready to die ?)")
-            }
-
-            else if (score>30 && score<50){
-                rank.innerHTML=("Ranking: The Beta Knight (The village idiot respect's you.)")
-            }
-
-            else if (score>50){
-                rank.innerHTML=("Ranking: The Grand Knight (Well done !! You can retire now.)")
-            }
+            score>15 && score<=30 ? rank.innerHTML="Ranking: The Cannon Fodder  (A promotion !! Ready to die ?)":
+            score>30 && score<=40 ? rank.innerHTML="Ranking: The Beta Knight (The village idiot respect's you.)":
+            score>40 && score<=60 ? rank.innerHTML="Ranking: The Grand Knight ( Fear my Jump !!)":
+            score>60 && (rank.innerHTML=("Ranking: The Knight King (Well done !! You can retire now.)"));
         }
 
         enemyPosition-=10;
