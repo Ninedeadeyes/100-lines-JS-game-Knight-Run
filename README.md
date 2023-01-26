@@ -15,3 +15,7 @@ Added my own custom features/music/art work to see what I can do with under 100 
 Play at 
 
 https://ninedeadeyes.github.io/100-lines-JS-game-Knight-Run/
+
+Check out my other games at
+
+https://ninedeadeyes.github.io/JavaScript-Mini-Arcade/
